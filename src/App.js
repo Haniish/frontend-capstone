@@ -8,6 +8,8 @@ import Form5Page from './pages/Form5Page';
 import Form6Page from './pages/Form6Page';
 import Form7Page from './pages/Form7Page';
 import Form8Page from './pages/Form8Page';
+import FooterPage from './pages/FooterPage';
+
 
 
 
@@ -23,6 +25,7 @@ function App() {
         <Route path="/form6" element={<Form6Page />} />
         <Route path="/form7" element={<Form7Page />} />
         <Route path="/form8" element={<Form8Page />} />
+        <Route path="/footer" element={<FooterPage />} />
 
         
       </Routes>
