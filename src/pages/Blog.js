@@ -117,7 +117,7 @@ function Blog() {
   </div>
 ))}
       </div>
-      <button className="lets-talk-button">Let's talk</button>
+      <button className="lets-talk-button">Let' talk</button>
     </div>
   );
 }

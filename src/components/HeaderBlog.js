@@ -11,7 +11,7 @@ const Header = () => {
             <div className="header-content"> {/* Contenedor para párrafos */}
         <p>How to Carve the Best Pumpkin on the Block</p>
         <p>|</p>
-        <p>How to Carve the Best Pumpkin on the Block</p>
+        <p>How to Crve the Best Pumpkin on the Block</p>
         <p>|</p>
         <p>How to Carve the Best Pumpkin on the Block</p>
       </div>
