@@ -2,18 +2,26 @@ import React from 'react';
 import { Grid,Container, Radio, RadioGroup, Typography, Box, Button, Checkbox, FormControlLabel, TextField, IconButton } from '@mui/material';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import StyledLinearProgress from './StyledLinearProgress';
+import { useNavigate } from 'react-router-dom';
 
 function Form1({ currentPage, setCurrentPage, nextPage }) {
+
+    const navigate = useNavigate();
+
+    const goToPage = (page) => {
+    navigate(page);
+  };
+
     return (
         <Container>
                  <div style={{ margin: '10px auto', padding: '20px' }}>
                     <StyledLinearProgress variant="determinate" value={1} />
                         <Box display="flex" alignItems="center" justifyContent="center" mb={2}>
-                            <IconButton onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}>
+                            <IconButton onClick={() => goToPage('/form1')}>
                                 <ArrowBack />
                             </IconButton>
                             <Typography variant="subtitle1" style={{ marginLeft: '10px', marginRight: '10px' }}>Primary Applicant</Typography>
-                            <IconButton onClick={nextPage}>
+                            <IconButton onClick={() => goToPage('/form2')}>
                                 <ArrowForward />
                             </IconButton>
                         </Box>

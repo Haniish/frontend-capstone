@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import { Container, Typography, Box, Button, IconButton } from '@mui/material';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import StyledLinearProgress from './StyledLinearProgress';
+import { useNavigate } from 'react-router-dom';
+
 
 function Form5({ currentPage, setCurrentPage, nextPage }) {
     const [selectedValue, setSelectedValue] = useState('');
@@ -14,6 +16,13 @@ function Form5({ currentPage, setCurrentPage, nextPage }) {
         // Handle form submission logic here.
         console.log(`Selected down payment option: ${selectedValue}`);
     };
+
+    const navigate = useNavigate();
+
+    const goToPage = (page) => {
+    navigate(page);
+    };
+
     return (
         
         <Container>

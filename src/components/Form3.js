@@ -3,6 +3,7 @@ import { Container, Typography, Box, Button, IconButton } from '@mui/material';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import StyledLinearProgress from './StyledLinearProgress';
 import '../css/form2.css';
+import { useNavigate } from 'react-router-dom';
 
 function Form3({ currentPage, setCurrentPage, nextPage }) {
   const [location, setLocation] = useState('');
@@ -30,19 +31,24 @@ function Form3({ currentPage, setCurrentPage, nextPage }) {
   };
 
 
+  const navigate = useNavigate();
+
+    const goToPage = (page) => {
+    navigate(page);
+  };
   
   return (
     <Container>
       <div style={{ margin: '10px auto', padding: '20px' }}>
         <StyledLinearProgress variant="determinate" value={2} />
         <Box display="flex" alignItems="center" justifyContent="center" mb={2}>
-          <IconButton onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}>
+          <IconButton onClick={() => goToPage('/form2')}>
             <ArrowBack />
           </IconButton>
           <Typography variant="subtitle1" style={{ marginLeft: '10px', marginRight: '10px' }}>
             Future Home
           </Typography>
-          <IconButton onClick={nextPage}>
+          <IconButton onClick={() => goToPage('/form4')}>
             <ArrowForward />
           </IconButton>
         </Box>
