@@ -11,7 +11,6 @@ function form2({ currentPage, setCurrentPage, nextPage }) {
     const handleLocationClick = (value) => {
         setLocation(value);
     };
-
     return (
         <Container>
                  <div style={{ margin: '10px auto', padding: '20px' }}>
