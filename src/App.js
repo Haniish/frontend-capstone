@@ -10,6 +10,9 @@ import Form7Page from './pages/Form7Page';
 import Form8Page from './pages/Form8Page';
 import ArticleContent from './pages/Article';
 
+import ContactUsPage from './pages/ContactUsPage';
+import Blog from './pages/Blog';
+import AgentsPage from './pages/AgentsPage';
 
 
 function App() {
@@ -27,10 +30,14 @@ function App() {
         <Route path="/form7" element={<Form7Page />} />
         <Route path="/form8" element={<Form8Page />} />
         <Route path="/Article" element={<ArticleContent />} />
+        <Route path="/contactus" element={<ContactUsPage />} />
+        <Route path="/agents" element={<AgentsPage />} />
+        <Route path="/blog" element={<Blog />} />
         
       </Routes>
     </Router>
     );
+
 }
 
 export default App;
