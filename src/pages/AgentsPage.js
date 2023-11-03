@@ -1,10 +1,16 @@
 import React from "react";
 import "../css/agentstyle.css";
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 export const AgentsPage = () => {
   return (
+    
     <div className="agents">
-      <div className="div">
+      <Navbar />
+      <div className="content">
+        <div className="div">
+       
         <div className="overlap">
           {/* <div className="group">
             <footer className="footer">
@@ -155,28 +161,17 @@ export const AgentsPage = () => {
             </div>
           </div>
         </div>
-        {/* <div className="overlap-wrapper">
+       <div className="overlap-wrapper">
           <div className="overlap-2">
-            <div className="navbar">
-              <div className="text-wrapper-10">Agents</div>
-              <div className="text-wrapper-11">How it Works</div>
-              <div className="text-wrapper-12">About</div>
-              <div className="text-wrapper-13">Blog</div>
-              <div className="text-wrapper-14">Contact US</div>
-            </div>
-            <div className="overlap-3">
-              <div className="text-wrapper-15">Sign In</div>
-              <div className="group-4">
-                <div className="overlap-group-3">
-                  <div className="text-wrapper-16">Get Started</div>
-                </div>
-                <div className="group-5" />
-              </div>
-            </div>
+            <Navbar />
           </div>
-        </div> */}
+        </div> 
         {/* <img className="group-6" alt="Group" src="group-34372.png" /> */}
+        
+        </div>
       </div>
+      <div className="footer-agent">
+      <Footer /></div>
     </div>
   );
 };

@@ -1,14 +1,16 @@
 .agents {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  width: 100%;
+  align-items: center; 
+}
+
   
   .agents .div {
     background-color: #ffffff;
-    height: 4458px;
+    height: 4000px;
     overflow: hidden;
     position: relative;
     width: 1920px;
@@ -18,7 +20,7 @@
     height: 1422px;
     left: 0;
     position: absolute;
-    top: 3036px;
+    top: 2890px;
     width: 1976px;
   }
   
@@ -49,14 +51,7 @@
     width: 1920px;
   }
   
-  .agents .city {
-    height: 194px;
-    left: 0;
-    object-fit: cover;
-    position: absolute;
-    top: 298px;
-    width: 1159px;
-  }
+
   
   .agents .frame {
     align-items: flex-start;
@@ -103,7 +98,7 @@
     width: 685px;
   }
   
-  .agents .toronto-ottawa {
+  /* .agents .toronto-ottawa {
     color: #ffffff;
     font-family: "Work Sans-Regular", Helvetica;
     font-size: 16.2px;
@@ -114,7 +109,7 @@
     position: absolute;
     top: 102px;
     width: 259px;
-  }
+  } */
   
   .agents .frame-2 {
     height: 208px;
@@ -304,7 +299,6 @@
     height: 966px;
     left: 0;
     position: absolute;
-    top: 144px;
     width: 1920px;
   }
   
@@ -352,7 +346,7 @@
     height: 963px;
     left: 0;
     position: absolute;
-    top: 1110px;
+    top: 964px;
     width: 1920px;
   }
   
@@ -472,7 +466,7 @@
     height: 963px;
     left: 0;
     position: absolute;
-    top: 2073px;
+    top: 1927px;
     width: 1920px;
   }
   
@@ -690,7 +684,7 @@
   
   .agents .overlap-2 {
     background-color: #ffffff;
-    height: 144px;
+    height: 70px;
     position: relative;
     width: 1920px;
   }
@@ -845,3 +839,6 @@
     width: 315px;
   }
   
+  .agents .footer-agent {
+    top: -100px;
+  }
