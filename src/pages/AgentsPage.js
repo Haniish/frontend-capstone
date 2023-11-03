@@ -76,22 +76,17 @@ export const AgentsPage = () => {
               can help renters together.
             </p>
             <div className="overlap-group-wrapper">
-              <div className="div-wrapper">
+              <button className="div-wrapper">
                 <div className="text-wrapper-6">Let’s Talk</div>
-              </div>
+              </button>
             </div>
           </div>
         </div>
         <div className="header-image">
-          <img
-            className="hello-future"
-            alt="Hello future"
-            // src="hello-future-partners-lets-help-renters-become-homeowners.svg"
-          />
           <div className="group-2">
-            <div className="overlap-group-2">
+            <button className="overlap-group-2">
               <div className="text-wrapper-7">Let’s Talk</div>
-            </div>
+            </button>
           </div>
         </div>
         <div className="frame-4">
@@ -114,7 +109,7 @@ export const AgentsPage = () => {
           <div className="group-wrapper">
             <div className="group-3">
               <div className="div-card-3">
-                <img className="img-2" alt="Img" src="public/images/5e4578a8dbdb695e3a55ffa4_icon-relationships.png" />
+               <div className="img-2-1" ></div>
                 <div className="heading-3">Relationships</div>
                 <div className="div-2">
                   <p className="build-meaningful">
@@ -125,7 +120,7 @@ export const AgentsPage = () => {
                 </div>
               </div>
               <div className="div-card-4">
-                <img className="img-2" alt="Img" src="public/images/5e4578ae03b5d913fdfbb05f_icon-brand.png" />
+                <div className="img-2-2" ></div>
                 <div className="heading-brand">Brand awareness</div>
                 <div className="div-2">
                   <p className="keep-your-name-and">
@@ -136,7 +131,7 @@ export const AgentsPage = () => {
                 </div>
               </div>
               <div className="div-card-5">
-                <img className="img-3" alt="Img" src="public/images/5e4578c803b5d98b97fbb110_icon-exp.png" />
+                <div className="img-3" ></div>
                 <div className="heading-consumer">Consumer-focused</div>
                 <div className="div-2">
                   <p className="consumer">
@@ -147,7 +142,7 @@ export const AgentsPage = () => {
                 </div>
               </div>
               <div className="div-card-6">
-                <img className="img-3" alt="Img" src="public/images/5e4578c803b5d98b97fbb110_icon-exp.png" />
+                <div className="img-3" ></div>
                 <div className="heading-consumer">Consumer-focused</div>
                 <div className="div-2">
                   <p className="consumer">

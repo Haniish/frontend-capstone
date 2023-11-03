@@ -5,7 +5,7 @@ import StyledLinearProgress from './StyledLinearProgress';
 import '../css/form2.css';
 import { useNavigate } from 'react-router-dom';
 
-function Form3({ currentPage, setCurrentPage, nextPage }) {
+function Form3() {
   const [location, setLocation] = useState('');
   const [isLocationSelected, setIsLocationSelected] = useState(false);
 
@@ -40,7 +40,7 @@ function Form3({ currentPage, setCurrentPage, nextPage }) {
   return (
     <Container>
       <div style={{ margin: '10px auto', padding: '20px' }}>
-        <StyledLinearProgress variant="determinate" value={2} />
+        <StyledLinearProgress variant="determinate" value={3} />
         <Box display="flex" alignItems="center" justifyContent="center" mb={2}>
           <IconButton onClick={() => goToPage('/form2')}>
             <ArrowBack />
@@ -48,7 +48,8 @@ function Form3({ currentPage, setCurrentPage, nextPage }) {
           <Typography variant="subtitle1" style={{ marginLeft: '10px', marginRight: '10px' }}>
             Future Home
           </Typography>
-          <IconButton onClick={() => goToPage('/form4')}>
+          <IconButton onClick={goToPage('/form4')}
+            disabled={!isLocationSelected}>
             <ArrowForward />
           </IconButton>
         </Box>
@@ -98,7 +99,7 @@ function Form3({ currentPage, setCurrentPage, nextPage }) {
               borderRadius: '39px',
               backgroundColor: '#7731E4',
             }}
-            onClick={nextPage}
+            onClick={goToPage('/form4')}
             disabled={!isLocationSelected}
           >
             Next
